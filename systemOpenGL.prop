@@ -1,0 +1,88 @@
+# This file will be read by# This file will be read by resetprop
+# Example: Change dpi
+# ro.sf.lcd_density=320
+
+# Rendering Tweak
+debug.hwui.renderer=skiagl
+ro.ui.pipeline=opengl
+debug.renderengine.backend=skiaglthreaded
+debug.hwui.shadow.renderer=skiagl
+persist.sys.composition.type=c2d
+debug.composition.type=c2d
+
+# Memory Tweak
+persist.sys.use_16bpp_alpha=1
+persist.sys.purgeable_assets=1
+ro.zygote.disable_gl_preload=false
+ro.config.fha_enable=true
+
+# GPU Tweak
+debug.performance.tuning=1
+persist.sys.scrollingcache=3
+ro.product.gpu.driver=1
+debug.egl.profiler=0
+debug.egl.hw=1
+debug.sf.hw=1
+debug.egl.force_msaa=false
+debug.egl.force_fxaa=false
+debug.egl.force_taa=false
+debug.egl.buffcount=0
+persist.sys.ui.hw=true
+video.accelerate.hw=1
+ro.config.hw_high_perf=true
+ro.config.enable.hw_accel=true
+ro.config.disable.hw_accel=false
+persist.sys.gpu.working_thread_priority=1
+renderthread.skia.reduceopstasksplitting=true
+debug.graphics.game_default_frame_rate.disabled=true
+persist.sys.perf.topAppRenderThreadBoost.enable=true
+debug.skia.threaded_mode=true
+hw3d.force=1
+hw2d.force=1
+dev.pm.dyn_samplingrate=1
+vendor.perf.framepacing.enable=1
+debug.cpurend.vsync=false
+debug.gpurend.vsync=false
+ro.vendor.dfps.enable=false
+ro.vendor.smart_dfps.enable=false
+
+# HWUI Tweak
+debug.hwui.show_dirty_regions=false
+debug.hwui.render_dirty_regions=false
+debug.hwui.disable_draw_defer=true
+debug.hwui.disable_draw_reorder=true
+debug.hwui.disable_vsync=true
+debug.hwui.app_memory_policy=true
+ro.hwui.disable_scissor_opt=false
+debug.hwui.level=0
+debug.hwui.skia_tracing_enabled=false
+debug.hwui.trace_gpu_resources=false
+debug.hwui.use_gpu_pixel_buffers=false
+debug.hwui.use_buffer_age=false
+
+# LMK Tweak
+persist.sys.lmk.reportkills=false
+sys.lmk.reportkills=false
+ro.lmk.debug=false
+ro.lmk.log_stats=false
+
+# Dalvik Tweak
+dalvik.vm.dexopt.thermal-cutoff=0
+dalvik.vm.dex2oat-minidebuginfo=false
+dalvik.vm.minidebuginfo=false
+dalvik.vm.usejit=true
+dalvik.vm.usejitprofiles=true
+dalvik.vm.dexopt-flags=m=y
+ro.sys.fw.dex2oat_threads=4
+
+# Other Tweak
+persist.sys.dalvik.multithread=true
+persist.sys.dalvik.hyperthreading=true
+persist.service.lgospd.enable=0
+persist.service.pcsync.enable=0
+persist.sys.lgospd.enable=0
+persist.sys.pcsync.enable=0
+persist.service.boost.enable=1
+persist.service.boost.level=2
+persist.sys.thermal.engine=false
+persist.sys.thermal.policy=performance
