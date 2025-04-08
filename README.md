@@ -24,3 +24,4 @@ Universal render tweak to improve gaming performance for the better
 ### Notes
 - But it makes your device heat up quickly and drains the battery.
 - For vulkan, not all devices support vulkan. and at least have Vulkan API 1.1
+- Not tested in KSU and APatch
