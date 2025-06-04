@@ -17,9 +17,11 @@ persist.sys.use_16bpp_alpha=1
 persist.sys.purgeable_assets=1
 ro.zygote.disable_gl_preload=false
 ro.config.fha_enable=true
+debug.kill_allocating_task=1
 
 # GPU Tweak
 debug.performance.tuning=1
+debug.perf.tuning=1
 persist.sys.scrollingcache=3
 ro.product.gpu.driver=1
 debug.egl.profiler=0
