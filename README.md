@@ -7,6 +7,7 @@ Universal render tweak to improve gaming performance for the better
 - Change default software rendering to skiagl ( OpenGL ) or skiavk ( Vulkan )
 - Remove limits FPS ( not unlock fps 120 )
 - Change default power mode to performance mode
+- Tweak UI, Graphics, Memory and HWUI
 
 ### Download
 - Download from the [releases page](https://github.com/sanndyrmdhn/RenderHL/releases/)
