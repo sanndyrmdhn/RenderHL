@@ -80,11 +80,3 @@ ro.sys.fw.dex2oat_threads=4
 # Other Tweak
 persist.sys.dalvik.multithread=true
 persist.sys.dalvik.hyperthreading=true
-persist.service.lgospd.enable=0
-persist.service.pcsync.enable=0
-persist.sys.lgospd.enable=0
-persist.sys.pcsync.enable=0
-persist.service.boost.enable=1
-persist.service.boost.level=2
-persist.sys.thermal.engine=false
-persist.sys.thermal.policy=performance
