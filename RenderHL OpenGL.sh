@@ -24,6 +24,9 @@ sleep 3
 echo "Installing Module"
 sleep 3
 echo "Change the default Power mode to Performance mode"
+cmd settings put system cloud_schedboost_enable true
+cmd settings put system power_mode_level 0
+cmd settings put system speed_mode 1
 cmd power set-adaptive-power-saver-enabled false
 cmd power set-fixed-performance-mode-enabled true
 cmd power set-mode 0
@@ -64,17 +67,22 @@ setprop debug.hwui.skia_tracing_enabled false
 setprop debug.hwui.trace_gpu_resources false
 setprop debug.hwui.use_gpu_pixel_buffers false
 setprop debug.hwui.use_buffer_age false
+echo "Turning off Logcat"
+logcat -c
+logcat -P "$(pgrep *|sed 's/^/~/g')"
+pkill -f logcat
 echo "Tweak Memory"
 setprop debug.kill_allocating_task 1
 cmd activity memory-factor set 0
+cmd device_config put activity_manager low_swap_threshold_percent 1.0
 echo "Turning off Logcat"
 logcat -c
 logcat -P "$(pgrep *|sed 's/^/~/g')"
 pkill -f logcat
 echo "Tweak Thermal"
 cmd thermalservice override-status 0
-settings put system rt_enable_templimit false
-settings put system rt_templimit_bottom 60
-settings put system rt_templimit_celling 60
+cmd settings put system rt_enable_templimit false
+cmd settings put system rt_templimit_bottom 60
+cmd settings put system rt_templimit_celling 60
 echo "Succesfuly Install Module on your device"
 echo "To uninstall a module simply reboot your device."
