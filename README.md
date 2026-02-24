@@ -13,7 +13,7 @@ Universal render tweak to improve gaming performance for the better
 - Download from the [releases page](https://github.com/sanndyrmdhn/RenderHL/releases/)
 
 ### Installation For Root
-- Download and flash the zip in magisk manager
+- Download and flash the zip in magisk manager ( KernelSU not tested )
 - Reboot the device
 
 ### Installation For No Root
