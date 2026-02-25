@@ -8,12 +8,14 @@ Universal render tweak to improve gaming performance for the better
 - Remove limits FPS ( not unlock fps 120 )
 - Change default power mode to performance mode
 - Tweak UI, Graphics, Memory and HWUI
+- DIsable Logging device ( for non root )
+- Disable Logging windows ( for non root / root )
 
 ### Download
 - Download from the [releases page](https://github.com/sanndyrmdhn/RenderHL/releases/)
 
 ### Installation For Root
-- Download and flash the zip in magisk manager ( KernelSU not tested )
+- Download and flash the zip in magisk manager ( Not tested in KSU and APatch )
 - Reboot the device
 
 ### Installation For No Root
@@ -25,4 +27,3 @@ Universal render tweak to improve gaming performance for the better
 ### Notes
 - But it makes your device heat up quickly and drains the battery.
 - For vulkan, not all devices support vulkan. and at least have Vulkan API 1.1
-- Not tested in KSU and APatch
