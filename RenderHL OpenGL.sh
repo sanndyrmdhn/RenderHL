@@ -79,6 +79,9 @@ echo "Turning off Logcat"
 logcat -c
 logcat -P "$(pgrep *|sed 's/^/~/g')"
 pkill -f logcat
+cmd window logging disable
+cmd window logging disable-text
+cmd window logging stop
 echo "Tweak Thermal"
 cmd thermalservice override-status 0
 cmd settings put system rt_enable_templimit false
