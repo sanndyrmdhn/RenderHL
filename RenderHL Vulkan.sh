@@ -67,10 +67,6 @@ setprop debug.hwui.skia_tracing_enabled false
 setprop debug.hwui.trace_gpu_resources false
 setprop debug.hwui.use_gpu_pixel_buffers false
 setprop debug.hwui.use_buffer_age false
-echo "Turning off Logcat"
-logcat -c
-logcat -P "$(pgrep *|sed 's/^/~/g')"
-pkill -f logcat
 echo "Tweak Memory"
 setprop debug.kill_allocating_task 1
 cmd activity memory-factor set 0
