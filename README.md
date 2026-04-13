@@ -1,5 +1,5 @@
 ### RenderHL Android 11+
-![Banner](https://github.com/sanndyrmdhn/RenderHL/blob/main/Banner.png)
+![Banner](https://github.com/sanndyrmdhn/RenderHL/blob/main/banner.png)
 Universal render tweak to improve gaming performance for the better
 
 ### Feature Module
