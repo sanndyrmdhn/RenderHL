@@ -10,6 +10,7 @@ Universal render tweak to improve gaming performance for the better
 - Tweak UI, Graphics, Memory and HWUI
 - DIsable Logging device ( for non root )
 - Disable Logging windows ( for non root / root )
+- Tweak Kernel ScheTune ( for root )
 
 ### Download
 - Download from the [releases page](https://github.com/sanndyrmdhn/RenderHL/releases/)
