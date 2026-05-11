@@ -1,9 +1,9 @@
-### RenderHL Android 11+
+### RenderHL Android 12+
 ![Banner](https://github.com/sanndyrmdhn/RenderHL/blob/main/banner.png)
 Universal render tweak to improve gaming performance for the better
 
 ### Feature Module
-- Change default hardware rendering to c2d
+- Change default hardware rendering to gpu
 - Change default software rendering to skiagl ( OpenGL ) or skiavk ( Vulkan )
 - Remove limits FPS ( not unlock fps 120 )
 - Change default power mode to performance mode
